@@ -8,6 +8,9 @@
   --dark-sand: #f6c28b;
   --light-sand: #fcd7ad;
   --brown: #a57548;
+
+  --yellow-beige: #e1c591;
+  --dark-blue: #1b3159;
 }
 
 /* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
