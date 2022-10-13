@@ -25,28 +25,31 @@
     <script src="./main.js" defer></script>
   </head>
   <body class="min-h-screen">
-    <nav class="font-serif">
+    <nav
+      class="font-serif md:mt-2 pb-2 border-dark-blue border-b-2 md:border-y-2"
+    >
       <div class="md:flex flex-row justify-between md:my-2">
+        <!-- border-dark-blue border-b-4 pb-2 -->
         <div class="bg-yellow-beige">
           <img
             src="./assets/logos/logo.jpeg"
             alt="Pizzeria D'Acampo logo"
             width="350px"
-            class="mx-auto md:mx-4"
+            class="mx-auto md:mx-0"
           />
         </div>
 
         <ul
-          class="flex flex-row gap-6 justify-center items-center text-center mx-4 my-2"
+          class="flex flex-row gap-6 justify-center items-center text-center text-dark-blue mx-4 my-2"
         >
-          <li><a href="#story">Our Story</a></li>
+          <li><a href="#story">Our story</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#open">Store information</a></li>
         </ul>
       </div>
 
       <div
-        class="relative w-full bg-hero-pattern bg-cover bg-center h-64 sm:h-96"
+        class="relative w-full bg-hero-pattern bg-cover bg-center h-64 sm:h-96 md:h-128"
       >
         <!-- <div class="absolute w-full bg-clear-black h-64 sm:h-96"></div> -->
         <!-- <h2 class="absolute text-center w-full top-2/4 text-white">
@@ -60,10 +63,28 @@
         >
           Wood-fired Pizza
         </h2> -->
+        <div class="h-full flex justify-center items-end pb-2 gap-1 sm:gap-1.5">
+          <div
+            class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-white opacity-75"
+          ></div>
+          <div
+            class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-slate-200 opacity-50"
+          ></div>
+          <div
+            class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-slate-200 opacity-50"
+          ></div>
+        </div>
       </div>
     </nav>
 
     <main>
+      <section
+        class="outline text-center text-white bg-dark-blue p-6 my-4 font-sans"
+      >
+        <h1 class="font-light pb-3 text-4xl md:text-6xl">Pizzeria D'Acampo</h1>
+        <h2 class="text-2xl">Made in Naples</h2>
+      </section>
+
       <section id="story" class="outline my-4 font-sans">
         <h3>Our labour of love that has been passed down for generations</h3>
         <p>
