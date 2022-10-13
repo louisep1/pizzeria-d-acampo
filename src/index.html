@@ -4,35 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Pizzeria D'Acampo</title>
     <script src="./main.js" defer></script>
   </head>
   <body class="min-h-screen">
-    <nav class="relative outline flex flex-row justify-between">
-      <div class="absolute outline w-full"></div>
-      <img
-        src="./assets/logos/logo.jpeg"
-        alt="Pizzeria D'Acampo logo"
-        width="350px"
-      />
+    <nav class="font-serif">
+      <div class="md:flex flex-row justify-between md:my-2">
+        <div class="bg-yellow-beige">
+          <img
+            src="./assets/logos/logo.jpeg"
+            alt="Pizzeria D'Acampo logo"
+            width="350px"
+            class="mx-auto md:mx-4"
+          />
+        </div>
 
-      <!-- <h1 class="text outline ml-4">Pizzeria D'Acampo</h1> -->
-      <ul class="flex flex-row gap-4 outline mr-4">
-        <li><a href="#story">Our Story</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#open">Opening times</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul
+          class="flex flex-row gap-6 justify-center items-center text-center mx-4 my-2"
+        >
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#open">Store information</a></li>
+        </ul>
+      </div>
 
-      <h2 class="absolute text-center w-full top-2/4 outline">Take a bite</h2>
+      <div
+        class="relative w-full bg-hero-pattern bg-cover bg-center h-64 sm:h-96"
+      >
+        <!-- <div class="absolute w-full bg-clear-black h-64 sm:h-96"></div> -->
+        <!-- <h2 class="absolute text-center w-full top-2/4 text-white">
+          Take a bite
+        </h2> -->
+        <!-- <h2 class="absolute text-center w-full top-2/4 text-white">
+          The Naples way
+        </h2> -->
+        <!-- <h2
+          class="absolute text-center w-full top-2/4 text-white font-sans font-light text-lg"
+        >
+          Wood-fired Pizza
+        </h2> -->
+      </div>
     </nav>
 
     <main>
-      <section id="story" class="outline my-4">
+      <section id="story" class="outline my-4 font-sans">
         <h3>Our labour of love that has been passed down for generations</h3>
         <p>
-          Back in Napoli (Naples, Italy), in 1903, Nonna D`Acampo was cooking
+          Back in Napoli (Naples, Italy), in 1903, Nonna D'Acampo was cooking
           pizzas at home on an open flame. Forward to today, we are still using
           the same base, sauce and ingredients today.
         </p>
@@ -45,7 +80,7 @@
       <section id="menu">
         <h3>Menu</h3>
         <p>Pizza</p>
-        <ul>
+        <ul class="font-serif">
           <li>Marinara</li>
           <li>Margherita</li>
           <li>Margherita Buffalo</li>
