@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
+/* npx tailwindcss -i ./src/input.css -o .output.css --watch */
 
 /* npx tailwindcss -o build.css --minify */
