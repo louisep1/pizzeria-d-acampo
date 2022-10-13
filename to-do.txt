@@ -1,0 +1,10 @@
+finish footer
+
+
+THEN:
+
+javascript - add the image sliders in the heading
+
+library to make things appear on scroll
+
+think about where/how to deploy
