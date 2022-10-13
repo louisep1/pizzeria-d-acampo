@@ -22,7 +22,6 @@ module.exports = {
         'hero-1': "url('/src/assets/hero/pizza-oven.jpg')",
         'hero-2': "url('/src/assets/hero/fire.jpg')",
         'hero-3': "url('/src/assets/hero/cooked-pizza.jpg')",
-        restaurant: "url('/src/assets/background/restaurant.jpg')",
       },
     },
     fontFamily: {
