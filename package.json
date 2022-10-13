@@ -4,7 +4,7 @@
   "description": "For the best pizzas with the taste of Italy",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./output.css --watch"
   },
   "keywords": [],
   "author": "",
