@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d1dc957f42.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Pizzeria D'Acampo</title>
@@ -44,18 +43,38 @@
           class="flex flex-row gap-6 justify-center items-center text-center text-dark-blue mx-4 my-2"
         >
           <li>
-            <a href="#story" class="hover:text-teal-500">Our story</a>
+            <a
+              href="#story"
+              class="pb-2 hover:text-teal-500 hover:border-b-2 border-teal-500"
+              >Our story</a
+            >
           </li>
-          <li><a href="#menu" class="hover:text-teal-500">Menu</a></li>
           <li>
-            <a href="#open" class="hover:text-teal-500">Store information</a>
+            <a
+              href="#menu"
+              class="pb-2 hover:text-teal-500 hover:border-b-2 border-teal-500"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="#info"
+              class="pb-2 hover:text-teal-500 hover:border-b-2 border-teal-500"
+              >Store information</a
+            >
           </li>
         </ul>
       </div>
 
       <div
-        class="relative w-full bg-hero-pattern bg-cover bg-center h-64 sm:h-96 md:h-128"
+        class="relative w-full bg-hero-1 bg-cover bg-center h-64 sm:h-96 md:h-128"
       >
+        <!-- <div
+        class="relative w-full bg-hero-2 bg-cover bg-center h-64 sm:h-96 md:h-128"
+      > -->
+        <!-- <div
+        class="relative w-full bg-hero-3 bg-cover bg-center h-64 sm:h-96 md:h-128"
+      > -->
         <div class="h-full flex justify-center items-end pb-2 gap-1 sm:gap-1.5">
           <div
             class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-white opacity-75"
@@ -73,7 +92,7 @@
     <main>
       <section class="border-dark-blue border-b-2">
         <div class="text-center text-white bg-dark-blue py-8 my-4">
-          <h1 class="font-light pb-3 text-4xl md:text-6xl font-serif">
+          <h1 class="font-extralight pb-3 text-4xl md:text-6xl font-serif">
             Pizzeria D'Acampo
           </h1>
           <h2 class="text-2xl font-sans">Made in Naples</h2>
@@ -90,8 +109,8 @@
         </p>
         <p>
           Back in Napoli (Naples, Italy), in 1903, Nonna D'Acampo was cooking
-          pizzas at home on an open flame. Forward to today, we are still using
-          the same base, sauce and ingredients today.
+          pizzas at home on an open flame. Forward to present times, we are
+          still using the same base, sauce and ingredients today.
         </p>
         <p>
           Using our freshly, hand-selected toppings, appeasing to a modern day
@@ -99,49 +118,113 @@
         </p>
 
         <div
-          class="grid grid-cols-3 gap-2 pt-10 justify-center justify-items-center items-center w-fit mx-auto"
+          class="grid grid-cols-3 gap-1 md:gap-2 pt-10 justify-center justify-items-center items-center w-fit mx-auto"
         >
           <img
             src="./assets/imgs/dough-balls.jpg"
             alt="dough balls"
             width="300px"
             height="300px"
+            class="rounded-md"
           />
           <img
             src="./assets/imgs/dough-stretch.jpg"
             alt="stetching out the dough"
             width="300px"
             height="300px"
+            class="rounded-md"
           />
           <img
             src="./assets/imgs/sauce.jpg"
             alt="tomato sauce"
             width="300px"
             height="300px"
+            class="rounded-md"
           />
         </div>
       </section>
 
-      <section id="menu">
+      <section
+        id="menu"
+        class="my-6 mx-4 p-8 border-teal-500 border-2 text-dark-blue"
+      >
         <!-- maybe have a img with an overlay and text over it here  -->
-        <h3>Menu</h3>
-        <p>Pizza</p>
-        <ul class="font-serif">
-          <li>Marinara</li>
-          <li>Margherita</li>
-          <li>Margherita Buffalo</li>
-          <li>Quattro Formaggi</li>
-          <li>Prosciutto e funghi</li>
-          <li>Capricciosa</li>
-          <li>Vegetariana</li>
-          <li>Diavola</li>
-        </ul>
+        <h3 class="text-3xl font-light text-center">Menu</h3>
+        <div
+          class="grid sm:grid-cols-3 pt-6 justify-center sm:justify-items-center w-fit text-center sm:text-left mx-auto p-4"
+        >
+          <div class="mb-4 sm:px-6 xl:px-10">
+            <p class="text-2xl 2xl:font-semibold">Pizza</p>
+            <ul class="font-serif 2xl:text-xl">
+              <li>Marinara</li>
+              <li>Margherita</li>
+              <li>Margherita Buffalo</li>
+              <li>Quattro Formaggi</li>
+              <li>Prosciutto e funghi</li>
+              <li>Capricciosa</li>
+              <li>Vegetariana</li>
+              <li>Diavola</li>
+            </ul>
+          </div>
+          <div class="mb-4 border-dark-blue sm:px-10 sm:border-x-2 xl:px-14">
+            <p class="text-2xl 2xl:font-semibold">Antipasto</p>
+            <ul class="font-serif 2xl:text-xl">
+              <li>Olives</li>
+              <li>Caprese</li>
+              <li>Bruschetta</li>
+              <li>Salad</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-2xl 2xl:font-semibold">Bevande</p>
+            <ul class="font-serif 2xl:text-xl">
+              <li>Negroni</li>
+              <li>Limoncello</li>
+              <li>Orange Juice</li>
+              <li>Peach Tea</li>
+              <li>Tea</li>
+              <li>Espresso</li>
+              <li>Cola</li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section id="open"></section>
-      <!-- <section id="contact"></section> -->
+
+      <section
+        id="info"
+        class="relative bg-restaurant bg-cover bg-center w-screen h-128"
+      >
+        <div class="absolute w-screen h-128 bg-clear-white z-10"></div>
+
+        <h3 class="text-3xl font-light text-center z-40 bg-white w-fit mx-auto">
+          Store Information
+        </h3>
+        <div>
+          <p class="text-2xl">Open 7 days a week</p>
+          <p>Monday - Friday, 11am - 10pm</p>
+          <p>Saturday, Sunday and Public Holidays - 11am - 12pm</p>
+        </div>
+
+        <div>
+          <p class="text-2xl">Find us at:</p>
+          <p>123 Oxford Street</p>
+          <p>London</p>
+          <p>W1D 2JD</p>
+        </div>
+
+        <div>
+          <p class="text-2xl">Want to make a reservation?</p>
+          <p>Call us on</p>
+          <p>01234 567890</p>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark-blue h-48 text-white mt-6 text-xl text-right">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-solid fa-phone"></i>
       <!-- social media links -->
     </footer>
   </body>
