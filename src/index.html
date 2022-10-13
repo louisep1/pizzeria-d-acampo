@@ -31,38 +31,31 @@
       >
         <!-- border-dark-blue border-b-4 pb-2 -->
         <div class="mx-4">
-          <img
-            src="./assets/logos/logo.png"
-            alt="Pizzeria D'Acampo logo"
-            width="350px"
-            class="mx-auto md:mx-0"
-          />
+          <a href=""
+            ><img
+              src="./assets/logos/logo.png"
+              alt="Pizzeria D'Acampo logo"
+              width="350px"
+              class="mx-auto md:mx-0"
+          /></a>
         </div>
 
         <ul
           class="flex flex-row gap-6 justify-center items-center text-center text-dark-blue mx-4 my-2"
         >
-          <li><a href="#story">Our story</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#open">Store information</a></li>
+          <li>
+            <a href="#story" class="hover:text-teal-500">Our story</a>
+          </li>
+          <li><a href="#menu" class="hover:text-teal-500">Menu</a></li>
+          <li>
+            <a href="#open" class="hover:text-teal-500">Store information</a>
+          </li>
         </ul>
       </div>
 
       <div
         class="relative w-full bg-hero-pattern bg-cover bg-center h-64 sm:h-96 md:h-128"
       >
-        <!-- <div class="absolute w-full bg-clear-black h-64 sm:h-96"></div> -->
-        <!-- <h2 class="absolute text-center w-full top-2/4 text-white">
-          Take a bite
-        </h2> -->
-        <!-- <h2 class="absolute text-center w-full top-2/4 text-white">
-          The Naples way
-        </h2> -->
-        <!-- <h2
-          class="absolute text-center w-full top-2/4 text-white font-sans font-light text-lg"
-        >
-          Wood-fired Pizza
-        </h2> -->
         <div class="h-full flex justify-center items-end pb-2 gap-1 sm:gap-1.5">
           <div
             class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-white opacity-75"
@@ -78,15 +71,23 @@
     </nav>
 
     <main>
-      <section class="outline text-center text-white bg-dark-blue p-6 my-4">
-        <h1 class="font-light pb-3 text-4xl md:text-6xl font-serif">
-          Pizzeria D'Acampo
-        </h1>
-        <h2 class="text-2xl font-sans">Made in Naples</h2>
+      <section class="border-dark-blue border-b-2">
+        <div class="text-center text-white bg-dark-blue py-8 my-4">
+          <h1 class="font-light pb-3 text-4xl md:text-6xl font-serif">
+            Pizzeria D'Acampo
+          </h1>
+          <h2 class="text-2xl font-sans">Made in Naples</h2>
+        </div>
       </section>
 
-      <section id="story" class="outline my-4 font-sans">
-        <h3>Our labour of love that has been passed down for generations</h3>
+      <section
+        id="story"
+        class="my-6 p-8 bg-slate-500 text-white text-center text-xl font-sans"
+      >
+        <h3 class="text-3xl font-light">Our Story</h3>
+        <p class="py-2">
+          Our labour of love that has been passed down for generations...
+        </p>
         <p>
           Back in Napoli (Naples, Italy), in 1903, Nonna D'Acampo was cooking
           pizzas at home on an open flame. Forward to today, we are still using
@@ -96,9 +97,33 @@
           Using our freshly, hand-selected toppings, appeasing to a modern day
           palette, with that same rustic flavour.
         </p>
+
+        <div
+          class="grid grid-cols-3 gap-2 pt-10 justify-center justify-items-center items-center w-fit mx-auto"
+        >
+          <img
+            src="./assets/imgs/dough-balls.jpg"
+            alt="dough balls"
+            width="300px"
+            height="300px"
+          />
+          <img
+            src="./assets/imgs/dough-stretch.jpg"
+            alt="stetching out the dough"
+            width="300px"
+            height="300px"
+          />
+          <img
+            src="./assets/imgs/sauce.jpg"
+            alt="tomato sauce"
+            width="300px"
+            height="300px"
+          />
+        </div>
       </section>
 
       <section id="menu">
+        <!-- maybe have a img with an overlay and text over it here  -->
         <h3>Menu</h3>
         <p>Pizza</p>
         <ul class="font-serif">
