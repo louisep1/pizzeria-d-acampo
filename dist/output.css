@@ -994,9 +994,17 @@ video {
     border-bottom-width: 2px;
   }
 
+  .md\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
   .md\:border-dark-blue {
     --tw-border-opacity: 1;
     border-color: rgb(27 49 89 / var(--tw-border-opacity));
+  }
+
+  .md\:bg-none {
+    background-image: none;
   }
 
   .md\:text-6xl {
