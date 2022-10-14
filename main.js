@@ -42,19 +42,15 @@ const fadeSection = document.querySelectorAll('.fadeOnScroll')
 const mobile = window.matchMedia('(max-width: 700px)').matches
 
 window.addEventListener('scroll', () => {
-  // For mobile users with desktop view enabled - just show all once user reaches the bottom:
-  if (
-    Math.ceil(window.scrollY) ===
-    Math.ceil(document.documentElement.scrollHeight - window.innerHeight)
-  ) {
+  if (mobile) {
     fadeSection.forEach(section => section.classList.add('appear'))
   }
 
-  fadeSection.forEach((section, i) => {
+  fadeSection.forEach(section => {
     if (section.getBoundingClientRect().top <= 300 && !mobile) {
-      fadeSection[i].classList.replace('opacity-0', 'opacity-100')
+      section.classList.replace('opacity-0', 'opacity-100')
     } else if (section.getBoundingClientRect().top <= 600) {
-      fadeSection[i].classList.replace('opacity-0', 'opacity-100')
+      section.classList.replace('opacity-0', 'opacity-100')
     }
   })
 })
