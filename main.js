@@ -50,13 +50,3 @@ const fadeOnScroll = () => {
 fadeOnScroll()
 
 window.addEventListener('scroll', fadeOnScroll)
-
-// window.addEventListener('scroll', () => {
-//   fadeSection.forEach(section => {
-//     if (section.getBoundingClientRect().top <= 300 && !mobile) {
-//       section.classList.replace('opacity-0', 'opacity-100')
-//     } else if (section.getBoundingClientRect().top <= 600) {
-//       section.classList.replace('opacity-0', 'opacity-100')
-//     }
-//   })
-// })

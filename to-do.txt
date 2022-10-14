@@ -1,5 +1,0 @@
-library to make things appear on scroll?
-
-maybe change the hero slider to be a library too?
-
-think about where/how to deploy
