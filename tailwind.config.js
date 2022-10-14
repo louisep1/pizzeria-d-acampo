@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./*.html'],
   theme: {
     extend: {
       spacing: {
@@ -19,9 +19,9 @@ module.exports = {
         'clear-white': 'rgba(255, 255, 255, 0.1)',
       },
       backgroundImage: {
-        'hero-1': "url('/src/assets/hero/pizza-oven.jpg')",
-        'hero-2': "url('/src/assets/hero/fire.jpg')",
-        'hero-3': "url('/src/assets/hero/cooked-pizza.jpg')",
+        'hero-1': "url('/assets/hero/pizza-oven.jpg')",
+        'hero-2': "url('/assets/hero/fire.jpg')",
+        'hero-3': "url('/assets/hero/cooked-pizza.jpg')",
       },
     },
     fontFamily: {

@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Pizzeria D'Acampo</title>
     <script src="./main.js" defer></script>
   </head>
@@ -40,7 +40,7 @@
         <div class="mx-4">
           <a href=""
             ><img
-              src="./src/assets/logos/logo.png"
+              src="./assets/logos/logo.png"
               alt="Pizzeria D'Acampo logo"
               width="350px"
               class="mx-auto md:mx-0"
@@ -74,17 +74,19 @@
         </ul>
       </div>
 
-      <div
-        id="hero-img"
-        class="relative w-full bg-hero-1 bg-cover bg-center h-64 sm:h-96 md:h-128"
-      >
-        <!-- <div
-        class="relative w-full bg-hero-2 bg-cover bg-center h-64 sm:h-96 md:h-128"
-      > -->
-        <!-- <div
-        class="relative w-full bg-hero-3 bg-cover bg-center h-64 sm:h-96 md:h-128"
-      > -->
-        <div class="h-full flex justify-center items-end pb-2 gap-1 sm:gap-1.5">
+      <div class="relative w-full h-64 sm:h-96 md:h-128">
+        <div
+          class="heroImg absolute opacity-100 transition-opacity duration-1000 w-full bg-hero-1 bg-cover bg-center h-64 sm:h-96 md:h-128"
+        ></div>
+        <div
+          class="heroImg absolute opacity-0 transition-opacity duration-1000 w-full bg-hero-2 bg-cover bg-center h-64 sm:h-96 md:h-128"
+        ></div>
+        <div
+          class="heroImg absolute opacity-0 transition-opacity duration-1000 w-full bg-hero-3 bg-cover bg-center h-64 sm:h-96 md:h-128"
+        ></div>
+        <div
+          class="absolute h-full w-full flex justify-center items-end pb-2 gap-1 sm:gap-1.5"
+        >
           <div
             class="imgDots w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-white opacity-75"
           ></div>
@@ -130,21 +132,21 @@
           class="grid grid-cols-3 gap-1 md:gap-2 pt-10 justify-center justify-items-center items-center w-fit mx-auto"
         >
           <img
-            src="./src/assets/imgs/dough-balls.jpg"
+            src="./assets/imgs/dough-balls.jpg"
             alt="dough balls"
             width="300px"
             height="300px"
             class="rounded-md"
           />
           <img
-            src="./src/assets/imgs/dough-stretch.jpg"
+            src="./assets/imgs/dough-stretch.jpg"
             alt="stetching out the dough"
             width="300px"
             height="300px"
             class="rounded-md"
           />
           <img
-            src="./src/assets/imgs/sauce.jpg"
+            src="./assets/imgs/sauce.jpg"
             alt="tomato sauce"
             width="300px"
             height="300px"
@@ -227,7 +229,7 @@
           </div>
 
           <img
-            src="./src/assets/imgs/restaurant.jpg"
+            src="./assets/imgs/restaurant.jpg"
             alt="restaurant front image"
             width="500px"
             class="pt-8 md:pt-0 justify-self-center md:justify-self-end"

@@ -1,6 +1,3 @@
-current js dosn't work => because it changes images really suddenly and looks really jumpy and ugly => need to change it so that it is smooth
-see if possible to do in js because tailwind css won't do it
-
 library to make things appear on scroll
 
 think about where/how to deploy
