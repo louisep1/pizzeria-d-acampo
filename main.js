@@ -55,8 +55,6 @@ slideArea.addEventListener(
 )
 
 slideArea.addEventListener('touchend', e => {
-  // !!!First, check the location of the start of swipe is not in the slideArea of the dots ???
-
   end = e.changedTouches[0].screenX
 
   // Check that it is swiped enough for it to be moved (swiped with intention, not just an accidental touch)
