@@ -18,10 +18,20 @@ dots.forEach((dot, i) =>
   })
 )
 
+const removeSlide = num => {
+  dots[num].classList.replace('bg-white', 'bg-slate-200')
+  dots[num].classList.replace('opacity-75', 'opacity-50')
+  hero[num].classList.replace('opacity-100', 'opacity-0')
+}
+
+const addSlide = num => {
+  dots[num].classList.replace('bg-slate-200', 'bg-white')
+  dots[num].classList.replace('opacity-50', 'opacity-75')
+  hero[num].classList.replace('opacity-0', 'opacity-100')
+}
+
 const updateSlide = () => {
-  dots[count].classList.replace('bg-white', 'bg-slate-200')
-  dots[count].classList.replace('opacity-75', 'opacity-50')
-  hero[count].classList.replace('opacity-100', 'opacity-0')
+  removeSlide(count)
 
   if (count === hero.length - 1) {
     count = 0
@@ -29,12 +39,50 @@ const updateSlide = () => {
     count += 1
   }
 
-  dots[count].classList.replace('bg-slate-200', 'bg-white')
-  dots[count].classList.replace('opacity-50', 'opacity-75')
-  hero[count].classList.replace('opacity-0', 'opacity-100')
+  addSlide(count)
 }
 
-setInterval(updateSlide, 4000)
+setInterval(updateSlide, 6000)
+
+// Adding left and right swipe functionality to slider:
+const slideArea = document.querySelector('.slideArea')
+let start = 0
+let end = 0
+
+slideArea.addEventListener(
+  'touchstart',
+  e => (start = e.changedTouches[0].screenX)
+)
+
+slideArea.addEventListener('touchend', e => {
+  // !!!First, check the location of the start of swipe is not in the slideArea of the dots ???
+
+  end = e.changedTouches[0].screenX
+
+  // Check that it is swiped enough for it to be moved (swiped with intention, not just an accidental touch)
+  if (
+    (start - end < 100 && start - end > 0) ||
+    (end - start < 100 && end - start > 0)
+  )
+    return
+
+  removeSlide(count)
+
+  count =
+    end > start && count - 1 === -1
+      ? hero.length - 1
+      : end > start
+      ? count - 1
+      : count + 1 === hero.length
+      ? 0
+      : end < start
+      ? count + 1
+      : count
+
+  addSlide(count)
+
+  start = 0
+})
 
 // Fade on scroll effect:
 const fadeSection = document.querySelectorAll('.fadeOnScroll')
