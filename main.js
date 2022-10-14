@@ -42,10 +42,6 @@ const fadeSection = document.querySelectorAll('.fadeOnScroll')
 const mobile = window.matchMedia('(max-width: 700px)').matches
 
 window.addEventListener('scroll', () => {
-  if (mobile) {
-    fadeSection.forEach(section => section.classList.add('appear'))
-  }
-
   fadeSection.forEach(section => {
     if (section.getBoundingClientRect().top <= 300 && !mobile) {
       section.classList.replace('opacity-0', 'opacity-100')
