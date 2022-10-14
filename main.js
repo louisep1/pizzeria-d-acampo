@@ -39,14 +39,24 @@ setInterval(updateSlide, 4000)
 // Fade on scroll effect:
 const fadeSection = document.querySelectorAll('.fadeOnScroll')
 
-const mobile = window.matchMedia('(max-width: 700px)').matches
-
-window.addEventListener('scroll', () => {
+const fadeOnScroll = () => {
   fadeSection.forEach(section => {
-    if (section.getBoundingClientRect().top <= 300 && !mobile) {
-      section.classList.replace('opacity-0', 'opacity-100')
-    } else if (section.getBoundingClientRect().top <= 600) {
+    if (section.getBoundingClientRect().top <= (window.innerHeight / 5) * 4) {
       section.classList.replace('opacity-0', 'opacity-100')
     }
   })
-})
+}
+
+fadeOnScroll()
+
+window.addEventListener('scroll', fadeOnScroll)
+
+// window.addEventListener('scroll', () => {
+//   fadeSection.forEach(section => {
+//     if (section.getBoundingClientRect().top <= 300 && !mobile) {
+//       section.classList.replace('opacity-0', 'opacity-100')
+//     } else if (section.getBoundingClientRect().top <= 600) {
+//       section.classList.replace('opacity-0', 'opacity-100')
+//     }
+//   })
+// })
