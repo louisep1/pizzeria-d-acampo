@@ -1,3 +1,4 @@
+// Hero slider:
 const hero = document.querySelectorAll('.heroImg ')
 const dots = document.querySelectorAll('.imgDots')
 
@@ -34,3 +35,18 @@ const updateSlide = () => {
 }
 
 setInterval(updateSlide, 4000)
+
+// Fade on scroll effect:
+const fadeSection = document.querySelectorAll('.fadeOnScroll')
+
+const mobile = window.matchMedia('(max-width: 700px)').matches
+
+window.addEventListener('scroll', () => {
+  fadeSection.forEach((section, i) => {
+    if (section.getBoundingClientRect().top <= 300 && !mobile) {
+      fadeSection[i].classList.replace('opacity-0', 'opacity-100')
+    } else if (section.getBoundingClientRect().top <= 600) {
+      fadeSection[i].classList.replace('opacity-0', 'opacity-100')
+    }
+  })
+})
